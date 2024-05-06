@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>site calculadora</title>
+</head>
+
+<body>
+<div class="inicil">
+  <a href="#home">casa</a>
+  <a href="#f">fraçoes</a>
+  <a href="#calculadora">calculadora</a>
+</div>
+<button onclick="on()">cor</button><button onclick="on2()" id="bb">cor</button>
+<div id="home">
+  <h1>sobre a calculadora</h1>
+  <h2>umas fraçoes que quantei </h2>
+  <li><strong>façao por (÷) </strong></li>
+    <p>essa fraçao e divisão</p>
+    <hr>
+   <li><strong>fraçao por (*)</strong></li>
+   <p>essa fração e multiplicação</p>
+   <hr>
+   <li><strong>fraçao por (+)</strong></li>
+   <p>fraçao de soma</p>
+   <hr>
+   <li><strong>fraçao por (%)</strong></li>
+   <p>fraçao de porcentagem</p>
+   <hr>
+   <li><strong>fraçao por (-)</strong></li>
+   <p>e de menos ne cara oxi</p>
+   <hr>
+</div>
+<div id="f">
+<div class="fracoes">
+  <div class="obj">÷</div>
+   <div class="obj">*</div>
+    <div class="obj">+</div>
+   <div class="obj">%</div>
+   <div class="obj">-</div>
+</div>
+<div id="calculadora"></div>
+<div class="calculadora">
+  <a href="https://meudeus122349090.github.io/Calculadora/">calculadora</a>
+  <img src="oh.png">
+ <h1><strong>uma calculadora basica</strong></h1>
+</div>
+<div class="termo">
+  <p>© nossos termos na boa</p>
+  
+</div>
+
+<script>
+function on(){
+  var color1 = 'darkblue'
+  var body = document.querySelector('body')
+  if(on){
+    body.style.backgroundColor = color1
+  }
+}
+function on2(){
+  var color1 = 'white'
+  var body = document.querySelector('body')
+  if(on){
+    body.style.backgroundColor = color1
+  }
+}
+</script>
+<style>
+  .fracoes{
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    background: transparent;
+    text-align: center;
+    color:#fff;
+    font-size: 150px;
+    
+  }
+  .obj{
+    background: #223;
+    margin:10px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+  }
+  body{
+    text-align:center;
+  }
+  img{
+    height: 400px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+  }
+  .calculadora a{
+    font-size: 40px;
+  }
+  .inicil{
+           text-align: center;
+          background: #333;
+            height: 100px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid red;
+  }
+  .inicil a{
+    font-size: 34px;
+    color:#fff;
+    margin: 5px;
+     
+  }
+  .termo{
+    background: #333;
+    width: 100%;
+    height: 60px;
+    color:#fff;
+    font-size: 25px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    bottom:0;
+    margin-left:-8px;
+  }
+  button{
+    border-radius: 60%;
+    height: 40px;
+    width: 40px;
+    background: blue;
+    color:#fff;
+    margin: 10px;
+  }
+  #bb{
+    background: #fff9;
+    color: black;
+  }
+
+  
+</style>
+</body>
+
+
+</html>
